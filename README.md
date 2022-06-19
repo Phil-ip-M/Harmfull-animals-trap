@@ -6,7 +6,7 @@ Traps are not allowed in every countries.
 * The system is a really simple arduino based circuit using : 
   + 1 ultrasonic sensor
   + 1 servo motor
-  + 1 RGB LED (optional)
+  + 1 RGB LED + 3 220 $\Omega$ resistors (both optional)
 
 When the animal will enter the cage, he will be in awarness mode. He wants to eat but he is affraid by the cage. The goal here is to let him enter the cage without anything happening.
 
