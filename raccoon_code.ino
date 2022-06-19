@@ -59,13 +59,9 @@ void loop() {
         redValue = 255; // Choose a value between 1 and 255 to change the color.
         greenValue = 0;
         blueValue = 0;
+    
       
-        // this is unnecessary as we've either turned on RED in SETUP
-        // or in the previous loop ... regardless, this turns RED off
-        // analogWrite(RED, 0);
-        // delay(1000);
-      
-        for (int i = 0; i < 255; i += 1) // Fades out between red and blue
+        for (int i = 0; i < 255; i += 1) // Fades out red bring blue full when i=255
           redValue -= 1;
           blueValue += 1;
           analogWrite(RED, redValue);
@@ -78,14 +74,10 @@ void loop() {
         greenValue = 0;
         blueValue = 255;
       
-        for (int i = 0; i < 255; i += 1) // Dades out blue bring red full when i=255
+        for (int i = 0; i < 255; i += 1) // Fades out blue bring red full when i=255
         {
-          // The following code has been rearranged to match the other two similar sections
           blueValue -= 1;
           redValue += 1;
-          // The following was reversed, counting in the wrong directions
-          // analogWrite(BLUE, 255 - blueValue);
-          // analogWrite(RED, 255 - redValue);
           analogWrite(BLUE, blueValue);
           analogWrite(RED, redValue);
           delay(delayTime);
