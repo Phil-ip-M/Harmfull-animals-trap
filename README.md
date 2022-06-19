@@ -11,6 +11,8 @@ Traps are not allowed in every countries.
 When the animal will enter the cage, he will be in awarness mode. He wants to eat but he is affraid by the cage. The goal here is to let him enter the cage without anything happening.
 
 ![raccoon diagram](https://user-images.githubusercontent.com/106909423/174474798-c649b70b-c78c-442f-95f8-465d70af18ef.jpg)
+
+
 The trap is triggered by the servo motor which will pull a fishing wire. This will release the trap's door.
 ## Circuit diagram
 ![Powerful Tumelo-Fulffy](https://user-images.githubusercontent.com/106909423/174475797-cf8f45a3-c8d9-4ad6-ab71-830a348054b0.png)
